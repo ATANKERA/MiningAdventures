@@ -1,4 +1,4 @@
-# MiningAdventures.Space
+# MiningAdventures
 TigerHacks2020
 
 
