@@ -2,4 +2,5 @@
 TigerHacks2020
 
 
-https://atankera.github.io/MiningAdventures.Space/
+
+https://atankera.github.io/MiningAdventures/
