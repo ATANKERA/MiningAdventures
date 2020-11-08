@@ -864,13 +864,24 @@ body .game input[id*="padlock"]:after {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/padlockDown.png);
 }
 body .game input[id*="padlock"]:before {
+/*  left: 0;
+  display: none;
+  line-height: 40px;
+  text-align: center;
+  position: fixed;
+*/
+
   display: block;
   content: '';
   position: absolute;
   height: 23px;
-  width: 22px;
-  left: -7px;
+  width: -1200px;
+  left: -200px;
   top: -30px;
+
+  margin: auto;
+  /*width: 50%;*/
+
   color: white;
   background: red;
   cursor: pointer;
@@ -1410,44 +1421,6 @@ body .game_segment__control .down img {
           transform: rotate(90deg) scale(3);
 }
 
-/* ------------------------------------------------------------------------------------
-
-Calculate the way an animated sprite should be shown from its width and frame count
-then animate the background image
-
---------------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------------------------------
-
-Name: Traverse through scenes
-Description: Makes it incredibly easy to trigger scene changes using the checkbox *hack*
-Instead of doing  input#index39:checked + input + div + div { props }
-
---------------------------------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------------
-
-When in specified semgent, show the down arrow and the up arrow of the segment below
-
---------------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------------
-
-Prevent movement labels showing on specified sement
-
---------------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------------
-
-Compare two inputs then do something
-
---------------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------------
-
-Compare two inputs then do something
-
---------------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------------
-
-Create an interactive object
-
---------------------------------------------------------------------------------------- */
 input#interactiveObject--lock:not(:checked) + div + input + span + input + span + input:checked + span + input + span + input + span + input + span + input + span + input + span + input + span + input:checked + span + input + span + input + span + input + span + input + span + input + span + input + span + input + span + input + span + input + span + input + span + input + span + input + span + input + span + input:checked + span + input + span + input + span + input + span + label + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + div + div + div .game_segment:nth-of-type(28) .tiles .tile:nth-of-type(13) {
   content: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/doorUnlocked.png");
 }
@@ -1463,16 +1436,7 @@ input#interactiveObject--lock:not(:checked) + div + input + span + input + span 
   display: block !important;
 }
 
-/* ------------------------------------------------------------------------------------
 
-Assign an image/gif at a specific tile
-
---------------------------------------------------------------------------------------- */
-/* ----------------------------------
-
-Init the traverse
-
-------------------------------------- */
 @-webkit-keyframes walk-1 {
   animation: 1%{background-position: 0px 0px;}16.5666666667%{background-position:-0px 0px;}16.6666666667%{background-position:-48px 0px;}16.7666666667%{background-position:-48px 0px;}33.2333333333%{background-position:-48px 0px;}33.3333333333%{background-position:-96px 0px;}33.4333333333%{background-position:-96px 0px;}49.9%{background-position:-96px 0px;}50%{background-position:-144px 0px;}50.1%{background-position:-144px 0px;}66.5666666667%{background-position:-144px 0px;}66.6666666667%{background-position:-192px 0px;}66.7666666667%{background-position:-192px 0px;}83.2333333333%{background-position:-192px 0px;}83.3333333333%{background-position:-240px 0px;}83.4333333333%{background-position:-240px 0px;}99.9%{background-position:-240px 0px;}100%{background-position:-288px 0px;};
 }
@@ -1545,11 +1509,9 @@ Init the traverse
 @keyframes walk-12 {
   animation: 1%{background-position: 0px 0px;}16.5666666667%{background-position:-0px 0px;}16.6666666667%{background-position:-48px 0px;}16.7666666667%{background-position:-48px 0px;}33.2333333333%{background-position:-48px 0px;}33.3333333333%{background-position:-96px 0px;}33.4333333333%{background-position:-96px 0px;}49.9%{background-position:-96px 0px;}50%{background-position:-144px 0px;}50.1%{background-position:-144px 0px;}66.5666666667%{background-position:-144px 0px;}66.6666666667%{background-position:-192px 0px;}66.7666666667%{background-position:-192px 0px;}83.2333333333%{background-position:-192px 0px;}83.3333333333%{background-position:-240px 0px;}83.4333333333%{background-position:-240px 0px;}99.9%{background-position:-240px 0px;}100%{background-position:-288px 0px;};
 }
-    /* ----------------------------------
 
-    Global scene transitions
 
-    ------------------------------------- */
+
 input#indexRow1-1:checked + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + div {
   -webkit-animation: walk-1 1s forwards;
           animation: walk-1 1s forwards;
@@ -1682,11 +1644,9 @@ input#indexRow4-1:checked + input + input + input + input + input + input + inpu
   transition: all 0.3s 1s;
 }
 
-    /* ----------------------------------
 
-    Global scene transitions
 
-    ------------------------------------- */
+
 input#indexRow1-2:checked + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + div {
   -webkit-animation: walk-2 1s forwards;
           animation: walk-2 1s forwards;
@@ -1819,11 +1779,7 @@ input#indexRow4-2:checked + input + input + input + input + input + input + inpu
   transition: all 0.3s 1s;
 }
 
-    /* ----------------------------------
 
-    Global scene transitions
-
-    ------------------------------------- */
 input#indexRow1-3:checked + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + div {
   -webkit-animation: walk-3 1s forwards;
           animation: walk-3 1s forwards;
@@ -1956,11 +1912,7 @@ input#indexRow4-3:checked + input + input + input + input + input + input + inpu
   transition: all 0.3s 1s;
 }
 
-    /* ----------------------------------
 
-    Global scene transitions
-
-    ------------------------------------- */
 input#indexRow1-4:checked + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + div {
   -webkit-animation: walk-4 1s forwards;
           animation: walk-4 1s forwards;
@@ -2093,11 +2045,8 @@ input#indexRow4-4:checked + input + input + input + input + input + input + inpu
   transition: all 0.3s 1s;
 }
 
-    /* ----------------------------------
 
-    Global scene transitions
 
-    ------------------------------------- */
 input#indexRow1-5:checked + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + div {
   -webkit-animation: walk-5 1s forwards;
           animation: walk-5 1s forwards;
@@ -2230,11 +2179,7 @@ input#indexRow4-5:checked + input + input + input + input + input + input + inpu
   transition: all 0.3s 1s;
 }
 
-    /* ----------------------------------
 
-    Global scene transitions
-
-    ------------------------------------- */
 input#indexRow1-6:checked + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + div {
   -webkit-animation: walk-6 1s forwards;
           animation: walk-6 1s forwards;
@@ -2367,11 +2312,7 @@ input#indexRow4-6:checked + input + input + input + input + input + input + div 
   transition: all 0.3s 1s;
 }
 
-    /* ----------------------------------
 
-    Global scene transitions
-
-    ------------------------------------- */
 input#indexRow1-7:checked + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + input + div {
   -webkit-animation: walk-7 1s forwards;
           animation: walk-7 1s forwards;
